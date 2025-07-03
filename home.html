@@ -1,56 +1,12 @@
-      text-align: center;
-      padding: 50px 20px;
-    }
-h1 {
-  color: #00ffe0;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  animation: pulseGlow 2.5s infinite ease-in-out;
-}
-
-@keyframes pulseGlow {
-  0% {
-    text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0, 0 0 15px #00ffe0;
-  }
-  50% {
-    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2;
-  }
-  100% {
-    text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0, 0 0 15px #00ffe0;
-  }
-}
-    .countdown {
-      font-size: 2em;
-      color: #ffcc00;
-@@ -221,6 +234,31 @@ <h1>🛸 Starfox's BLFC Mission Briefing</h1>
-      infoDialog.style.display = "none";
-    }
-  });
-</script>
-  <script>
-  const dustColors = ["#fffacc", "#d9faff", "#fff0f5"];
-  document.addEventListener("mousemove", function(e) {
-    const dust = document.createElement("div");
-    dust.style.position = "absolute";
-    dust.style.width = "6px";
-    dust.style.height = "6px";
-    dust.style.borderRadius = "50%";
-    dust.style.pointerEvents = "none";
-    dust.style.left = e.pageX + "px";
-    dust.style.top = e.pageY + "px";
-    dust.style.background = dustColors[Math.floor(Math.random() * dustColors.length)];
-    dust.style.opacity = 0.8;
-    dust.style.boxShadow = "0 0 8px white";
-    dust.style.transition = "transform 1s linear, opacity 1s ease-out";
-    document.body.appendChild(dust);
-
-    requestAnimationFrame(() => {
-      dust.style.transform = `translateY(-20px) scale(0.5)`;
-      dust.style.opacity = 0;
-    });
-
-    setTimeout(() => dust.remove(), 1000);
-  });
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+<title>FTRT Command Centre</title>
+</head>
+<body>
+<h1>Fiction to Reality Transfer - Command Centre</h1>
+<p>Access Granted</p>
+<s>Subtitle</s>
+<a href="https://www.example.com">View Location and Data</a>
 </body>
 </html>
